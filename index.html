@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #8a2be2, #1e90ff); /* Mor mavi arası gradient */
+}
+
+
+
+        header {
+    background-color: #7fffd4; /* Soft Cyan */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    }
+
+    h1 {
+    text-shadow: 1px 1px 1px #000, 
+                 -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000;
+}
+
+        nav {
+            background-color: #666;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        button {
+            background-color: #4CAF50; /* Yeşil */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Koyu yeşil */
+        }
+
+        h2 {
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #ffcc00; /* Sarı */
+        }
+
+        p {
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #ffcc00; /* Sarı */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>amodotpy</h1>
+    </header>
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+    <section>
+        <h2>Bedava nitro ister misin?</h2>
+        <img src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-action/256/address-book-new-icon.png" alt="Resim">
+        <p>İsim: Nitro.exe</p>
+        <a href="#" download="nitro.zip"><button>Dosyayı İndir</button></a>
+    </section>
+    <footer>
+        <p>Telif Hakkı © amodotpy 2024 Anasayfa.</p>
+    </footer>
+</body>
+</html>
