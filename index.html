@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmodotWEB - Mainpage</title>
+    <title>Anasayfa</title>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: radial-gradient(circle, #8a2be2, #1e90ff); /* Mor mavi arası gradient */
-}
-
-
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #8a2be2, #1e90ff); /* Mor mavi arası gradient */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Stack elements vertically */
+            min-height: 100vh; /* Ensure full height of the viewport */
+        }
 
         header {
-    background-color: #7fffd4; /* Soft Cyan */
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    }
+            background-color: #7fffd4; /* Soft Cyan */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-    h1 {
-    text-shadow: 1px 1px 1px #000, 
-                 -1px -1px 1px #000, 
-                 1px -1px 1px #000, 
-                 -1px 1px 1px #000;
-}
+        h1 {
+            text-shadow: 1px 1px 1px #000,
+            -1px -1px 1px #000,
+            1px -1px 1px #000,
+            -1px 1px 1px #000;
+        }
 
         nav {
             background-color: #666;
@@ -45,9 +46,22 @@ body {
             color: #ffcc00;
         }
 
+        .container {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            flex-wrap: wrap; /* Allow items to wrap to next line */
+            padding: 20px; /* Add padding */
+        }
+
         section {
             padding: 20px;
             text-align: center;
+            margin: 10px; /* Add margin between sections */
+            background-color: #f0f0f0; /* Light grey background */
+            border-radius: 10px; /* Rounded corners */
+            flex: 1; /* Equal width for sections */
+            max-width: 400px; /* Limit maximum width */
         }
 
         footer {
@@ -55,8 +69,6 @@ body {
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
 
@@ -112,22 +124,32 @@ body {
     </style>
 </head>
 <body>
-    <header>
-        <h1>amodotpy</h1>
-    </header>
-    <nav>
-        <a href="index.html">Anasayfa</a>
-        <a href="#">Hakkımızda</a>
-        <a href="#">İletişim</a>
-    </nav>
+<header>
+    <h1>amodotpy</h1>
+</header>
+<nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">İletişim</a>
+</nav>
+<div class="container"> <!-- Added container div -->
     <section>
         <h2>Bedava nitro ister misin?</h2>
-        <img src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-action/256/address-book-new-icon.png" alt="Resim">
+        <img src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-action/128/address-book-new-icon.png"
+             alt="Resim">
         <p>İsim: Nitro.exe</p>
-        <a href="Nitro.zip" download="Nitro.zip"><button>Dosyayı İndir</button></a>
+        <a href="nitro.zip" download="nitro.zip"><button>Dosyayı İndir</button></a>
     </section>
-    <footer>
-        <p>Telif Hakkı © amodotpy 2024 Anasayfa.</p>
-    </footer>
+    <section>
+        <h2>Nitro mu? Nerede!</h2>
+        <img src="https://icons.iconarchive.com/icons/bokehlicia/pacifica/128/nitro-icon.png"
+             alt="Resim">
+        <p>İsim: Nitrov2.exe, Beta</p>
+        <a href="nitrov2beta.zip" download="nitrov2beta.zip"><button>Dosyayı İndir(Beta, elbet hatalar olcak)</button></a>
+    </section>
+</div>
+<footer>
+    <p>Telif Hakkı © amodotpy 2024 Anasayfa.</p>
+</footer>
 </body>
 </html>
